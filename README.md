@@ -9,3 +9,6 @@
 5. 图片占用大小获取
 6. 图片内存，磁盘缓存清除
 
+### UI
+<a href="#"><img src="screenshot/aa.png" width="49%"/>
+
