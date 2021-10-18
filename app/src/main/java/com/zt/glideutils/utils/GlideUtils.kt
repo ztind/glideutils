@@ -56,7 +56,7 @@ class GlideUtils private constructor() {
         /**
          * 图片默认设置的预加载，加载为null,加载失败图片
          */
-        fun loadDefaultOptions(context:Context,url :String,imageView:ImageView){
+        fun loadDefaultOptionsImage(context:Context,url :String,imageView:ImageView){
             Glide.with(context)
                     .load(url)
                     .apply(defaultOptions)

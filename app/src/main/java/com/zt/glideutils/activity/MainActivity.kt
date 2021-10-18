@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         GlideUtils.load(this, url, imageView)
     }
     fun loadErrorClick(view: View){
-        GlideUtils.loadDefaultOptions(this, errorUrl, imageView)
+        GlideUtils.loadDefaultOptionsImage(this, errorUrl, imageView)
     }
     fun loadCircleClick(view: View){
         GlideUtils.loadCircleImage(this, url, imageView)
