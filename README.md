@@ -34,6 +34,6 @@
 
     ```
     dependencies {
-        implementation 'io.github.ztind:mvvm:1.0.2'
+        implementation 'com.github.ztind:glideutils:1.0.0'
     }
     ```
