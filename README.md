@@ -12,3 +12,28 @@
 ### UI
 <img src="screenshot/aa.jpg" width="49%"/>
 
+
+#### 快速开始
+
+1) 在 project 的 build.gradle 文件中找到 allprojects{} 代码块添加
+
+    ```
+    allprojects {
+        repositories {
+            maven { url 'https://jitpack.io' } //增加jitPack Maven仓库
+        }
+    }
+    ```
+2) 开启databinding支持，在项目的build.gradle文件中的android{}下添加如下代码
+    ```
+     buildFeatures{
+         dataBinding = true
+     }
+     ```
+3) 在 app 的 build.gradle 文件中找到 dependencies{} 代码块添加
+
+    ```
+    dependencies {
+        implementation 'io.github.ztind:mvvm:1.0.2'
+    }
+    ```
