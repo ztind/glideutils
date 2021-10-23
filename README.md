@@ -30,3 +30,70 @@
 ### UI
 <img src="screenshot/aa.jpg" width="49%"/>
 
+#### use api
+
+  ```
+    /**
+     * 加载网络图片
+     */
+    fun loadClick(view: View){
+        GlideUtils.load(this, url, imageView)
+    }
+    /**
+     * 加载默认属性设置的图片
+     */
+    fun loadErrorClick(view: View){
+        GlideUtils.loadDefaultOptionsImage(this, url, imageView)
+    }
+
+    /**
+     * 加载圆形图片
+     */
+    fun loadCircleClick(view: View){
+        GlideUtils.loadCircleImage(this, url, imageView)
+    }
+
+    /**
+     * 加载圆角图片
+     */
+    fun loadRoundClick(view: View){
+        GlideUtils.loadRoundImage(this, url, imageView, 20)
+    }
+
+    /**
+     * 加载4个角可以自定义的圆角图片
+     */
+    fun loadCustomerRoundClick(view: View){
+        GlideUtils.loadRoundImage(this, url, imageView, 15f,30f,45f,80f)
+    }
+
+    /**
+     * 模糊图片处理
+     */
+    fun loadBlurClick(view: View){
+        GlideUtils.loadBlurImage(this, url, imageView, 15)
+    }
+
+    /**
+     * 取消图片加载
+     */
+    fun clearClick(view: View){
+        GlideUtils.clear(this, imageView)
+    }
+
+    /**
+     * 清除图片缓存
+     */
+    fun clearCacheClick(view: View){
+        GlideUtils.clearImageMemoryCache(this)
+        GlideUtils.clearImageDiskCache(this)
+    }
+
+    /**
+     * 获取图片缓存大小
+     */
+    fun cacheSizeClick(view: View){
+        val size = GlideUtils.cacheSize(this)
+        Toast.makeText(this,size, Toast.LENGTH_SHORT).show()
+    }
+  ```
