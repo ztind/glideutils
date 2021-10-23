@@ -1,4 +1,4 @@
-package com.zt.glideutils.utils
+package com.zt.library.utils
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
