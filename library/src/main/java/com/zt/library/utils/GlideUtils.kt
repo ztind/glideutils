@@ -1,4 +1,4 @@
-package com.zt.glideusedemo.utils
+package com.zt.library.utils
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -137,7 +137,9 @@ class GlideUtils private constructor() {
         fun loadRoundImage(context:Context,url :String,imageView:ImageView , topLeft:Float,topRight:Float,bottomLeft:Float,bottomRight:Float){
             Glide.with(context)
                     .load(url)
-                    .transform(CenterCrop(),RoundTransformation(topLeft,topRight,bottomLeft,bottomRight))
+                    .transform(CenterCrop(),
+                        RoundTransformation(topLeft,topRight,bottomLeft,bottomRight)
+                    )
                     .into(imageView)
         }
         /**
@@ -147,7 +149,7 @@ class GlideUtils private constructor() {
         fun loadBlurImage(context:Context,url :String,imageView:ImageView,blurRadius:Int){
             Glide.with(context)
                     .load(url)
-                    .transform(CenterCrop(),BlurTransformation(blurRadius,2))
+                    .transform(CenterCrop(), BlurTransformation(blurRadius,2))
                     .into(imageView)
         }
         /**
@@ -158,7 +160,7 @@ class GlideUtils private constructor() {
         fun loadBlurImage(context:Context,url :String,imageView:ImageView,blurRadius:Int,sampling:Int){
             Glide.with(context)
                     .load(url)
-                    .transform(CenterCrop(),BlurTransformation(blurRadius,sampling))
+                    .transform(CenterCrop(), BlurTransformation(blurRadius,sampling))
                     .into(imageView)
         }
         /**

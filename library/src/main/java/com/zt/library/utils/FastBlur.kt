@@ -1,4 +1,4 @@
-package com.zt.glideusedemo.utils
+package com.zt.library.utils
 
 import android.graphics.Bitmap
 

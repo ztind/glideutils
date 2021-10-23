@@ -2,7 +2,6 @@ package com.zt.library.utils
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
-import com.zt.glideusedemo.utils.GlideUtils
 
 /**
 Describe：databinding中的ImageView与Glide结合使用
