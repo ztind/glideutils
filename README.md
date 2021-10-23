@@ -27,7 +27,7 @@
 5. 图片占用大小获取
 6. 图片内存，磁盘缓存清除
 
-### UI
+#### UI
 <img src="screenshot/aa.jpg" width="49%"/>
 
 #### how to use api?
