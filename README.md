@@ -30,7 +30,7 @@
          dataBinding = true
      }
      ```
-3) 在 app 的 build.gradle 文件中找到 dependencies{} 代码块添加
+3) 在 app 的 build.gradle 文件中找到 dependencies{} 代码块添加<br/>
    最新版本<img src="https://jitpack.io/v/ztind/glideutils.svg"/>
 
     ```
