@@ -16,6 +16,7 @@ object ImageViewAttrAdapter {
      * @param img_normal_url  图片地址
      */
     @BindingAdapter("img_normal_url")
+    @JvmStatic
     fun loadNormalImage(imageView: ImageView, img_normal_url: String) {
         GlideUtils.loadDefaultOptionsImage(imageView.context,img_normal_url,imageView)
     }
@@ -25,6 +26,7 @@ object ImageViewAttrAdapter {
      * app:blur_radius="@{xxx}" 模糊半径
      */
     @BindingAdapter("img_blur_url","blur_radius")
+    @JvmStatic
     fun loadBlurImage(imageView: ImageView, img_normal_url: String,blur_radius:Int){
         GlideUtils.loadBlurImage(imageView.context,img_normal_url,imageView,blur_radius)
     }
@@ -32,6 +34,7 @@ object ImageViewAttrAdapter {
      * 加载圆形图片，图片宽高需一致，内部自动计算(Glide内置变换CircleCrop)
      */
     @BindingAdapter("img_circle_url")
+    @JvmStatic
     fun loadCircleImage(imageView: ImageView,img_circle_url:String){
         GlideUtils.loadCircleImage(imageView.context,img_circle_url,imageView)
     }
